@@ -3,11 +3,11 @@ naivebayes
 
 Naive Bayes document classifier for the classic 20 newsgroups dataset
 
-#Introduction
+##Introduction
 
 This project, implements the Naive Bayes document classifier and apply it to the classic 20 newsgroups dataset.In this dataset, each document is a posting that was made to one of 20 different usenet newsgroups. The goal is to write a R program which can predict which newsgroup a given document was posted to.
 
-##Training
+###Training Data
 
 The data file (available on the data folder) contains six files:
 
@@ -23,8 +23,16 @@ The data file (available on the data folder) contains six files:
 
 6. **test.data** Same as train.data, except that it specified counts for test documents.
 
-##Prediction
-#Confusion Matrix
-#Overfitting
-#TODO
+###Implementation
+
+Implemetation contains following files.
+
+1. *read_data.R* - reads newsgroup data into R data structures ('slam' package is used to represent each document in a sparse mattrix form).
+2. *naive_bayes.R* - contains functions to train, predict and compute stats for naive bayes.
+3. *choose_alpha.R* - performs model selection over prior to pick the best alpha (prior is drawen from the Dirishlet Distribution).
+4. *feature_selection.R* - Please see TODO.
+
+##Confusion Matrix
+##Overfitting
+##TODO
 
