@@ -10,6 +10,7 @@ This project, implements the Naive Bayes document classifier and apply it to the
 ##Training
 
 The data file (available on the data folder) contains six files:
+
 1. **vocabulary.txt** is a list of the words that may appear in documents. The line number is word’s id in other files. That is, the first word (’archive’) has wordId 1, the second (’name’) has wordId 2, etc.
 
 2. **newsgrouplabels.txt** is a list of newsgroups from which a docment may have come. Again, the line number corresponds to the label’s id, which is used in the .label files. The first line (’alt.atheism’) has id 1, etc.
