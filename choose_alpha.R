@@ -1,5 +1,3 @@
-#modal fitting code - how to choos alpha
-
 choose_alpha <- function(from=-5, to=0, n=50){
   alphas <- 10 ^ seq(from, to, length=50);
   accuracy <- rep(0, times=n);
@@ -8,6 +6,20 @@ choose_alpha <- function(from=-5, to=0, n=50){
     predicted_label <- predict_naive_bayes(params, test_data);
     accuracy[i] <- compute_accuracy(predicted_label);    
   }
-  result <- list(list(alphas=alphas, accuracy=accuracy));
+  result <- list(alphas=alphas, accuracy=accuracy);
   return(result);
 }
+
+plot_line_chart <- function(data){
+  plot(log(data$alphas,10), 
+       data$accuracy, 
+       xlab="log(alpha)", 
+       ylab="accuracy(%)", 
+       main="choosing prior", 
+       type="l", 
+       col="blue", 
+       lwd=3);
+}
+
+
+
