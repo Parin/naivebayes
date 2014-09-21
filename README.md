@@ -35,7 +35,7 @@ Implemetation contains following files.
 ##Confusion Matrix
 ##Overfitting
 
-![alt tag](http://url/to/img.png)
+![alt tag](https://github.com/Parin/naivebayes/blob/master/plot.png)
 
 ##TODO
 
